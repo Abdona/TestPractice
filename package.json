@@ -1,0 +1,22 @@
+{
+  "name": "testpractice",
+  "version": "1.0.0",
+  "description": "Test Practices for JavaScript using Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdona/TestPractice.git"
+  },
+  "author": "Abdulrahman Naser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdona/TestPractice/issues"
+  },
+  "homepage": "https://github.com/Abdona/TestPractice#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
