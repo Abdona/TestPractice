@@ -1,0 +1,61 @@
+const calc = require ('./simpleCalculator');
+
+describe("Addition",()=>{
+    test('test1',()=>{
+        expect(calc.add(5,7)).toBe(12);
+    })
+    test('test2',()=>{
+        expect(calc.add(10,10)).toBe(20);
+    })
+    test('test3',()=>{
+        expect(calc.add(6,6)).toBe(12);
+    })
+    test('test4',()=>{
+        expect(calc.add(6,3)).toBe(9);
+    })
+});
+
+describe("Subtraction",()=>{
+    test('test1',()=>{
+        expect(calc.subtract(5,7)).toBe(-2);
+    })
+    test('test2',()=>{
+        expect(calc.subtract(10,10)).toBe(0);
+    })
+    test('test3',()=>{
+        expect(calc.subtract(6,2)).toBe(4);
+    })
+    test('test4',()=>{
+        expect(calc.subtract(20,3)).toBe(17);
+    })
+});
+
+describe("Multplication",()=>{
+    test('test1',()=>{
+        expect(calc.multiply(5,7)).toBe(35);
+    })
+    test('test2',()=>{
+        expect(calc.multiply(10,10)).toBe(100);
+    })
+    test('test3',()=>{
+        expect(calc.multiply(6,6)).toBe(36);
+    })
+    test('test4',()=>{
+        expect(calc.multiply(6,3)).toBe(18);
+    })
+});
+
+describe("Division",()=>{
+    test('test1',()=>{
+        expect(calc.divide(10,5)).toBe(2);
+    })
+    test('test2',()=>{
+        expect(calc.divide(10,10)).toBe(1);
+    })
+    test('test3',()=>{
+        expect(calc.divide(9,2)).toBeCloseTo(4.5);
+    })
+    test('test4',()=>{
+        expect(calc.divide(3,6)).toBeCloseTo(0.5);
+    })
+});
